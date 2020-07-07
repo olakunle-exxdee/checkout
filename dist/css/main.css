@@ -24,9 +24,13 @@ img {
   margin: 0 auto;
   padding: 1em 2em 1em 2em;
   border-radius: 10px;
-  border: 1px #828282 solid;
+  border: 0.4px #b5b5b5 solid;
   background-repeat: no-repeat;
   background-position: 5px;
+}
+
+.email:focus, .phone:focus, .name:focus, .address:focus, .city:focus, .group .country:focus, .group .code:focus {
+  border: 0.4px #b5b5b5 solid;
 }
 
 .email::-webkit-input-placeholder, .phone::-webkit-input-placeholder, .name::-webkit-input-placeholder, .address::-webkit-input-placeholder, .city::-webkit-input-placeholder, .group .country::-webkit-input-placeholder, .group .code::-webkit-input-placeholder {
