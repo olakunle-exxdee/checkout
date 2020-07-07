@@ -1,0 +1,81 @@
+form {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-bottom: 6em;
+  p {
+    padding: 2em 0;
+  }
+  .check {
+    font-size: 10px;
+    p {
+      color: $accent;
+      padding: 0;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    background: $sec-1;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    right: 40px;
+    &:hover {
+      background: lighten($secondary, 40%);
+    }
+  }
+}
+
+.label-input {
+  position: relative;
+  label {
+    position: absolute;
+    top: -20px;
+    font-size: 10px;
+    left: 5px;
+    color: $accent;
+  }
+}
+.email {
+  @extend %input;
+  background-image: url("/img/baseline_email_black_18dp.png");
+}
+.phone {
+  @extend %input;
+  background-image: url("/img/baseline_phone_black_18dp.png");
+}
+
+.name {
+  @extend %input;
+  background-image: url("/img/baseline_account_circle_black_18dp.png");
+}
+.address {
+  @extend %input;
+  background-image: url("/img/baseline_house_black_18dp.png");
+}
+.city {
+  @extend %input;
+  background-image: url("/img/baseline_location_city_black_18dp.png");
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .country {
+    width: 80%;
+    @extend %input;
+    background-image: url("/img/baseline_location_city_black_18dp.png");
+  }
+
+  .code {
+    width: 80%;
+    @extend %input;
+    background-image: url("/img/baseline_markunread_mailbox_black_18dp.png");
+  }
+}

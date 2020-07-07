@@ -1,0 +1,29 @@
+@media (min-width: 789px) {
+  .checkout {
+    padding: 0 2em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+
+    grid-template-areas:
+      "form form price price"
+      "form form price price"
+      "form form price price"
+      "form form price price";
+  }
+
+  #price {
+    grid-area: price;
+    align-self: center;
+  }
+
+  #form {
+    grid-area: form;
+    align-self: end;
+  }
+}

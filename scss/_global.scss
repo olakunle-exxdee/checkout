@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+img {
+  width: 100%;
+}
+
+$primary: #f2f2f2;
+$secondary: #333333;
+$accent: #828282;
+$sec-1: #f2994a;
+$sec2: #e0e0e0;
+
+%input {
+  color: $accent;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em 2em 0.5em 2em;
+  border-radius: 10px;
+  border: 1px $accent solid;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  &::placeholder {
+    font-size: 12px;
+  }
+}
