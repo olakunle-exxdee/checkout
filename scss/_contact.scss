@@ -17,13 +17,15 @@ form {
   }
 
   .btn {
+    cursor: pointer;
     position: absolute;
     text-align: center;
     text-decoration: none;
     background: $sec-1;
     color: #fff;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     border-radius: 10px;
+    border: none;
     right: 40px;
     &:hover {
       background: lighten($secondary, 40%);
